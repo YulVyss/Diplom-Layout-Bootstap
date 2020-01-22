@@ -1,0 +1,252 @@
+html, body {
+	font-family: 'Lora', serif;	
+	overflow-x: hidden;
+}
+h1 {
+	font: 400 expanded 120px 'Pattaya', sans-serif;
+}
+h2 {
+	font-size: 55px;
+	margin: 0 auto;
+}
+h3 {
+	font-size: 42px;
+}
+li {
+	list-style: none;
+}
+:focus, :focus-within {
+    outline: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.block_gray {
+	background-color: #EFEFEF;
+}
+.nav__item a:hover {
+	color: #F53F4F;
+	text-decoration: underline;
+}
+.call-block__number {
+	font-size: 26px;
+	font-weight: bold;
+}
+.call-block__number a:hover, .footer-contacts a:hover {
+	color: black;
+	text-decoration: none;
+}
+.block-introduction {
+	background: #EFEFEF url('images/fon-path.svg') 100% 100% / contain no-repeat;
+	position: relative;
+}
+.block-introduction__text_small {
+	color: #8993AD; 
+	font-size: 22px;
+}
+.transform {
+	transform: rotate(90deg);
+	margin: 50px auto;
+}
+.prev, .next {
+	width: 40px;
+	height: 40px;
+	box-shadow: 0 0 40px #303030;
+	background-color: #808080;
+	border-radius: 100%;
+	border: 5px solid #808080;
+}
+.img-lable {
+	color: white;
+	background-color: #808080;
+	box-shadow: 0 0 40px #303030;
+	border-radius: 20px;
+}
+.img-lable:hover {
+	color: white;
+}
+.carousel-indicators {
+	background-color: #303030;
+}
+.button_orange {
+	width: 270px;
+	height: 60px;
+	background-color: #ff4f30;
+	color: white;
+	cursor: pointer;
+	margin: 30px auto;
+	border-style: none;
+	font-size: 18px;
+}
+#button-116565 {
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    font-style: normal;
+    font-size: 18px;
+    background: #ff4f30;
+	border-style: none;
+}
+.skills-list__item {
+	color: #8993AD;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.skill-icon {
+	background: top no-repeat;
+	height: 75px;
+	transform: 1.5s;
+}
+.skill-icon:hover {
+	transform: scale(1.2);
+}
+.skill-icon_1 {
+	background-image: url(Icons/Landing.png);
+}
+.skill-icon_2 {
+	background-image: url(Icons/Adaptiv.png);
+}
+.skill-icon_3 {
+	background-image: url(Icons/Frotend.png);
+}
+.skill-icon_4 {
+	background-image: url(Icons/Repair.png);
+}
+.block-gradient {
+	background: linear-gradient(to bottom left, #FF2F96, #FF8F5A); 
+	position: relative;
+}
+.block-proposal {
+	color: white;
+	line-height: 2;
+}
+.block-proposal p {
+	font-size: 18px;
+}
+.block-gradient {
+	color: #FFFFFF;
+}
+.nav__item_footer a {
+	color: #8993AD;
+}
+.footer-contacts {
+	font-size: 20px;
+}
+.footer-contacts i {
+	background: linear-gradient(to bottom, #ff3094, #ff895e);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.fa-phone {
+	transform: scale(-1, 1);
+}
+.black-line {
+	background-color: black;
+	color: white;
+}
+/* .black-line p {
+	padding: 30px 0;
+	text-align: center;
+	margin: 0;
+} */
+.header__icon {
+	display: none;
+	border: none;
+	width: 45px;
+	height: 32px;
+	cursor: pointer;
+	z-index: 4;
+	}
+.header__button {
+	border: 0;
+	outline: 0;
+	position: relative;
+	top: 3px;
+	width: 45px;
+	height: 6px;
+	background: linear-gradient(to left bottom, #FF428A, #FF756A);
+	cursor: pointer;
+}
+.header__button::after, .header__button::before {
+	transition: all 0.5s;
+	position: absolute;
+	content: '';
+	display: block;
+	width: 45px;
+	height: 6px;
+	top: 0;
+	left: 0;
+}
+.header__button::after {
+	top: 13px;
+	background: linear-gradient(to left bottom, #FF726C, #FF8F5A);
+}
+.header__button::before {
+	top: -13px;
+	background: linear-gradient(to left bottom, #FF2F96, #FF4886);
+}
+.open {
+	background: transparent;
+}
+.open::after {
+	transform: rotate(-45deg);
+	top: 0;
+}
+.open::before {
+	transform: rotate(45deg);
+	top: 0;
+}
+.nav_mobile {
+	
+	position: absolute;
+	z-index: 3;
+	line-height: 3;
+	opacity: 0.9;
+	background-color: #FFFFFF;
+}
+.hide {
+	display: none;
+}
+.nav__item_mobile {
+	font-weight: bold;
+	text-align: center;
+	font-size: 18px;
+}
+.nav__item_mobile_img {
+	min-height: 60px;
+	background: url(Icons/briefcase.png) center / contain no-repeat;
+	margin: 100px auto 50px;
+}
+#up {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	font-size: 50px;
+	width: 50px;
+	height: 50px;
+	background-color: #FF004A;
+	border-radius: 100%;
+	transition: background-color .3s;
+	border-style: none;
+	box-shadow: 0 0 40px #FF004A;
+	opacity: 0.3;
+	font-size: 40px;
+	z-index: 100;
+}
+#up:hover {
+	cursor: pointer;
+	background-color: #ff4f30;
+}
+#up:active {
+	background-color: #ff4f30;
+}
+
+  #up.show {
+	opacity: 0.8;
+	visibility: visible;
+  }
+  i.fa-chevron-up {
+	color: white;
+  }
