@@ -2,8 +2,12 @@ html, body {
 	font-family: 'Lora', serif;	
 	overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth; 
+}
 h1 {
-	font: 400 expanded 120px 'Pattaya', sans-serif;
+	font-size: 100px;
+	margin: 120px auto 50px;
 }
 h2 {
 	font-size: 55px;
@@ -15,16 +19,14 @@ h3 {
 li {
 	list-style: none;
 }
-:focus, :focus-within {
+button:focus, button:focus-within {
     outline: none;
 }
 a {
 	text-decoration: none;
 	color: black;
 }
-.block_gray {
-	background-color: #EFEFEF;
-}
+
 .nav__item a:hover {
 	color: #F53F4F;
 	text-decoration: underline;
@@ -37,12 +39,21 @@ a {
 	color: black;
 	text-decoration: none;
 }
+.gray {
+	background-color: #FBFBFB;
+}
+.svg {
+	background: url(images/fon-path.svg) 0% 100% / cover no-repeat;
+	padding-top: 50px;
+	padding-bottom: 33px;
+}
 .block-introduction {
-	background: #EFEFEF url('images/fon-path.svg') 100% 100% / contain no-repeat;
+	
 	position: relative;
 }
 .block-introduction__text_small {
-	color: #8993AD; 
+	color: #61687A; 
+	text-shadow: 1px 1px 2px #FFFFFF;
 	font-size: 22px;
 }
 .transform {
@@ -50,21 +61,19 @@ a {
 	margin: 50px auto;
 }
 .prev, .next {
-	width: 40px;
-	height: 40px;
-	box-shadow: 0 0 40px #303030;
-	background-color: #808080;
-	border-radius: 100%;
-	border: 5px solid #808080;
+	width: 50px;
+	height: 50px;
+	background-color: #FF6E6F;
 }
 .img-lable {
 	color: white;
 	background-color: #808080;
-	box-shadow: 0 0 40px #303030;
-	border-radius: 20px;
+	box-shadow: 0 0 20px #303030;
+	opacity: 0.4;
 }
 .img-lable:hover {
 	color: white;
+	opacity: 0.9;
 }
 .carousel-indicators {
 	background-color: #303030;
@@ -72,23 +81,17 @@ a {
 .button_orange {
 	width: 270px;
 	height: 60px;
-	background-color: #ff4f30;
+	background: #ff4f30;
 	color: white;
 	cursor: pointer;
 	margin: 30px auto;
 	border-style: none;
 	font-size: 18px;
 }
-#button-116565 {
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    color: #ffffff;
-    font-style: normal;
-    font-size: 18px;
-    background: #ff4f30;
-	border-style: none;
+.button_orange:hover {
+	background: linear-gradient(to bottom left, #FF6E6F, #FF5181);
 }
+
 .skills-list__item {
 	color: #8993AD;
 	font-size: 20px;
@@ -97,7 +100,6 @@ a {
 .skill-icon {
 	background: top no-repeat;
 	height: 75px;
-	transform: 1.5s;
 }
 .skill-icon:hover {
 	transform: scale(1.2);
@@ -141,6 +143,50 @@ a {
 }
 .fa-phone {
 	transform: scale(-1, 1);
+}
+.call-block__button_footer {
+	width: 206px;
+	height: 45px;
+	background-color: transparent;
+	color: #F53F4F;
+	cursor: pointer;
+	margin: 0;
+	border: 1px solid #F82370;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+.call-block__button_footer:hover  {
+	background: linear-gradient(to bottom left, #FF6E6F, #FF5181);
+	color: #FFFFFF;
+}
+.soc-block__icons {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0;
+}
+.soc-block__icon a{
+	width: 35px;
+	height: 35px;
+	background: url(images/soc-sprite-s.png) no-repeat;
+	margin-right: 15px;
+	cursor: pointer;    
+    border: 0;
+    border-radius: 24px;
+    padding: 10px 20px;
+   }
+
+.vk a {
+	background-position: -5px -110px;
+	}
+.facebook a {
+	background-position: -109px -58px;
+}
+.twitter a {
+	background-position: -57px -6px;
+}
+.instagram a {
+	background-position: -6px -58px;
 }
 .black-line {
 	background-color: black;
@@ -250,3 +296,54 @@ a {
   i.fa-chevron-up {
 	color: white;
   }
+
+  .fas,
+.fas a {
+  color: #FFFFFF;
+}
+.form_contact, .form_call {
+	display: none;
+	position: fixed;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+	padding: 10px;
+	z-index: 1000000;
+	opacity: 0.9;
+	background-color: #FFFFFF;
+	text-align: center;
+	border-color: #FA0990;
+	box-shadow: 20px 0 100px #FA0990;
+
+}
+input, textarea {
+	font-size: 20px;
+	border: 2px solid #ff4f30;
+}
+.form_lable {
+	margin: 20px 0;
+}
+.submit {
+	margin: 0 auto 20px;
+	width: 230px;
+	height: 60px;
+	background-color: #ff4f30;
+	color: white;
+	cursor: pointer;
+	border-style: none;
+	font-size: 18px;
+}
+.fa-times-circle {
+	font-size: 40px;
+	border-radius: 20px;
+	color: #ff4f30;
+	position: absolute;
+	top: -40px;
+	right: -40px;
+	box-shadow: 0 0 100px #ff4f30;
+	background-color: #ffffff;
+}
+.fa-times-circle:hover {
+	font-size: 50px;
+	border-radius: 30px;
+}

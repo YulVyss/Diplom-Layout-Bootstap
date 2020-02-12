@@ -5,12 +5,9 @@
 	.header__icon {
 		display: block;
 	}
-	.block-introduction {
-		background-size: 80% 80%;
-		background-position: 220% 100%;
-	}
 	h1 {
 		font-size: 60px;
+		margin: 70px auto 50px;
 	}
 	h2 {
 		font-size: 35px;
@@ -23,6 +20,7 @@
 	.nav__item_footer {
 		font-size: 18px;
 	}
+
 }
 @media screen and (max-width: 765px) {
 	.call-block__number {
@@ -31,12 +29,16 @@
 	h1 {
 		font-size: 40px;
 	}
+	
 	.block-proposal {
 		padding: 50px 0 20px;
 	}
 	.button_orange {
-		width: 280px;
-		height: 55px;
+		width: 250px;
+		height: 50px;
+	}
+	.prev, .next {
+		display: none;
 	}
 	.footer-contacts {
 		color: #8993AD;
@@ -48,11 +50,15 @@
 	}
 }
 @media screen and (max-width: 580px) {
+	.container-fluid {
+		padding-left: 0;
+	}
 	h1 {
 		font-size: 50px;
+		margin: 50px auto 20px;
 	}
-	h2 {
-		font-size: 20px;
+	.block-introduction__text_small {
+		font-size: 18px;
 	}
 	h3 {
 		font-size: 25px;
@@ -85,10 +91,6 @@
 	.call-block__number {
 		font-size: 18px;
 	}
-	.block-introduction {
-		background-size: 130% 80%;
-		background-position: 50% 100%;
-	}
 	.button_orange {
 		margin: 15px auto;
 		font-size: 14px;
@@ -102,16 +104,30 @@
 	    background-size: contain;
 	    height: 60px;
 	}
+	.skills-list__item {
+		font-size: 16px;
+	}
 	.block-proposal p {
 		font-size: 12px;
 	}
 	.nav__item {
 		font-size: 14px;
 	}
+	.footer-contacts {
+		padding-left: 0;
+	}
 	footer li, .nav__item_footer {
 		font-size: 16px;
 	}
 	.black-line p {
 		font-size: 12px;
+	}
+	.form_contact, .form_call {
+		font-size: 16px;
+	}
+	.fa-times-circle {
+		font-size: 30px;
+		top: -40px;
+		right: 40%;
 	}
 }
